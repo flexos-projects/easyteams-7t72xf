@@ -1,60 +1,57 @@
 ---
-id: "001-vision"
-title: "Vision & Strategy"
+id: vision-001
+title: "Project Vision: easyteams"
+description: "Defines the core problem, solution, target audience, and unique value proposition for easyteams."
 type: doc
 subtype: core
 status: draft
 sequence: 1
-tags: [vision, strategy, personas]
+tags:
+  - vision
+  - strategy
+  - product
+createdAt: "2023-10-27T10:00:00Z"
+updatedAt: "2023-10-27T10:00:00Z"
 ---
 
-# Vision & Strategy
+# Project Vision: easyteams
 
-> The north star document. Defines what this product is, who it's for, and why it matters. Everything else flows from here.
+## 1. Introduction
 
-## Vision Statement
+easyteams is a unified, all-in-one platform designed to streamline and simplify core team management operations for small to medium-sized businesses (SMBs). Our mission is to eliminate the friction caused by using multiple, disconnected tools for essential HR functions. By consolidating holiday and leave management, expense tracking, new hire onboarding, and performance reviews into a single, intuitive interface, we empower businesses to operate more efficiently and create a superior employee experience. The platform is built on the principle that managing a team shouldn't be a complex, time-consuming burden for either the company or its employees.
 
-A clear, aspirational statement about what this product will become. Not a feature list — a future state. What does the world look like when this product succeeds?
+## 2. The Problem
 
-## Mission
+Small and medium-sized businesses today face significant operational challenges. They often rely on a patchwork of spreadsheets, email chains, and separate, single-purpose applications to manage critical HR tasks. This fragmentation leads to a host of problems:
 
-The practical version of the vision. What does this product DO, day to day, for its users? One sentence that anyone on the team can repeat.
+*   **Inefficiency and Wasted Time:** HR managers and team leads spend countless hours manually tracking holiday requests, chasing down expense receipts, and coordinating onboarding tasks. Data must be manually transferred between systems, increasing the risk of human error.
+*   **Poor Employee Experience:** For employees, simple tasks like booking a holiday or submitting an expense claim become frustrating and opaque. They lack a central place to view their leave balance, track reimbursement status, or understand their onboarding progress.
+*   **Lack of Visibility and Control:** Without a centralized system, managers lack a clear, real-time view of team availability, project expenses, or onboarding progress. This makes resource planning difficult and can lead to staffing conflicts or budget overruns.
+*   **Compliance and Consistency Risks:** Managing policies for leave, expenses, and onboarding manually makes it difficult to ensure fairness and consistency across the organization. This can introduce compliance risks and create a perception of unfairness among staff.
 
-## Problem
+## 3. Our Solution
 
-What pain point does this solve? Be specific — not "people need better tools" but "freelance photographers lose 3 hours per week chasing clients for gallery approvals." Include evidence if available.
+easyteams directly addresses these pain points by providing an integrated suite of essential tools. Our platform is not just a collection of features; it's a cohesive ecosystem where data flows seamlessly between modules, creating a single source of truth for team operations.
 
-## Solution
+*   **Unified Dashboard:** A personalized dashboard gives every user an at-a-glance summary of what matters to them—pending approvals for managers, upcoming leave for employees, and onboarding progress for new hires.
+*   **Streamlined Workflows:** We automate common processes like the **Submit & Approve Holiday Request** flow and the **Submit & Approve an Expense** flow, reducing manual intervention and speeding up resolution times. See the [Flows Document](./005-flows.md) for more details.
+*   **Centralized Policy Management:** The **Company Admin Settings** page allows administrators to configure and enforce company-wide policies for leave, expenses, and more, ensuring consistency and compliance.
+*   **Empowering Employees:** By providing self-service tools through dedicated pages like the **Leave Hub** and **Expenses Manager**, we empower employees to manage their own administrative tasks efficiently, freeing up HR and management to focus on more strategic initiatives.
 
-How does this product solve the problem? The elevator pitch. What's the core mechanism that makes things better?
+## 4. Target Audience
 
-## Target Users
+Our primary target is the Small to Medium-sized Business (SMB) sector, specifically companies with 10 to 200 employees. These organizations are large enough to feel the pain of manual processes but often lack the budget or technical resources to implement complex, enterprise-grade ERP systems.
 
-### Primary Persona
+Within these companies, we serve three key user personas:
 
-Describe the main user in detail — their role, frustrations, goals, technical comfort level, and what "success" looks like for them. Give them a name.
+*   **HR Managers/Admins:** They need a reliable system to manage policies, oversee compliance, and ensure smooth operations across the company.
+*   **Team Leads/Managers:** They require tools to approve requests, manage team availability, and oversee the performance and development of their direct reports.
+*   **Employees:** They want a simple, fast, and transparent way to handle their personal HR tasks like requesting leave and submitting expenses.
 
-### Secondary Personas
+## 5. Unique Value Proposition
 
-Other user types who benefit from the product. Admins, managers, collaborators, viewers — whoever else interacts with the system.
+easyteams' unique value lies in its powerful combination of integration and simplicity. While competitors may offer individual solutions for leave management or expense tracking, easyteams brings them all under one roof. Our value is built on:
 
-## Unique Value Proposition
-
-What makes this different from alternatives? Not just "better UI" — what's the structural advantage? Why will users switch from what they're doing now?
-
-## Success Metrics
-
-How do we know this is working? Define 3-5 measurable outcomes:
-
-- **Activation:** (what does a successful first session look like?)
-- **Engagement:** (what does regular usage look like?)
-- **Retention:** (what keeps users coming back?)
-- **Growth:** (how does the product spread?)
-
-## Non-Goals
-
-Equally important: what is this product NOT? What features, markets, or approaches are explicitly out of scope? This prevents scope creep and keeps the team focused.
-
-## Competitive Landscape
-
-What alternatives exist? Direct competitors, indirect substitutes, and the "do nothing" option. Where does this product fit in the market?
+*   **Deep Integration:** A holiday request automatically updates team calendars. An approved expense is ready for accounting export. A new hire is automatically assigned a pre-configured onboarding checklist. This interconnectedness eliminates data silos.
+*   **Superior User Experience:** We prioritize a clean, modern, and intuitive interface, detailed in our [Design Document](./006-design.md). The platform is designed to be used with minimal training, reducing friction and encouraging adoption.
+*   **Affordable Consolidation:** We offer a comprehensive solution at a price point accessible to SMBs, allowing them to replace multiple subscriptions with a single, cost-effective platform.

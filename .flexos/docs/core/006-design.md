@@ -1,111 +1,70 @@
 ---
-id: "006-design"
-title: "Design System"
+id: design-006
+title: "Design System & UX Principles"
+description: "Outlines the visual style, color palette, typography, and core user experience principles for easyteams."
 type: doc
 subtype: core
 status: draft
 sequence: 6
-tags: [design, brand, colors, typography, components]
+tags:
+  - design
+  - ux
+  - ui
+  - branding
+createdAt: "2023-10-27T10:05:00Z"
+updatedAt: "2023-10-27T10:05:00Z"
 ---
 
-# Design System
+# Design System & UX Principles
 
-> The visual identity and component language of the product. Everything a designer or developer needs to build consistent UI.
+This document defines the design language and user experience philosophy for the easyteams platform. Our goal is to create an interface that is not only functional but also delightful to use. The design should feel modern, clean, and friendly, reinforcing our brand promise of making team management simple and efficient.
 
-## Brand Voice
+## 1. Core UX Principles
 
-How does this product speak? Describe the tone, personality, and communication style:
+These principles will guide all design and development decisions to ensure a cohesive and user-centric product.
 
-- **Tone:** (professional, casual, playful, authoritative?)
-- **Voice:** (first person, second person, third person?)
-- **Personality traits:** (3-4 adjectives that describe the brand)
-- **Do:** (examples of on-brand copy)
-- **Don't:** (examples of off-brand copy)
+*   **Clarity Above All:** The interface must be intuitive and predictable. Users should be able to understand their options and complete tasks with minimal cognitive load. We will use clear labels, logical information hierarchy, and ample white space.
+*   **Efficiency in Every Flow:** Key user journeys, such as requesting leave or submitting an expense, should be achievable in the fewest steps possible. We will prioritize smart defaults, inline validation, and reduce unnecessary clicks.
+*   **Empowering, Not Overwhelming:** The platform should provide powerful tools for admins and managers without cluttering the experience for everyday employees. Information and features will be progressively disclosed based on user roles and context.
+*   **Consistency is Key:** Components, terminology, and interaction patterns should be consistent across the entire application. A button for 'Submit' should always look and behave the same, regardless of the page.
 
-## Color System
+## 2. Visual Style & Vibe
 
-### Primary Palette
+*   **Style:** Modern, Clean, Friendly. We will use soft shadows, rounded corners, and a balanced layout to create a welcoming and approachable feel. The design should convey professionalism without being sterile or corporate.
+*   **Vibe:** Efficient, Empowering, Intuitive. Users should feel confident and in control when using easyteams. The design will support this by being responsive, providing clear feedback for actions, and making complex processes feel simple.
 
-- **Primary:** #000000 (main brand color, used for CTAs and key elements)
-- **Accent:** #000000 (complementary color for highlights and secondary actions)
+## 3. Color Palette
 
-### Neutral Palette
+Our color palette is designed to be vibrant and engaging while maintaining accessibility and clarity.
 
-- **Dark:** #000000 (text, headings)
-- **Medium:** #000000 (secondary text, borders)
-- **Light:** #000000 (backgrounds, cards)
-- **White:** #ffffff (page background)
+*   **Primary Color (`#ec4899`):** A vibrant pink. This will be used for primary calls-to-action (buttons), active navigation states, and key branding elements. It should be used purposefully to draw attention to the most important actions on a page.
+*   **Accent Color (`#8b5cf6`):** A rich purple. This will be used for secondary actions, highlights, illustrations, and decorative elements. It complements the primary pink and adds depth to the visual design.
+*   **Neutral Dark (`#1f2937`):** A deep grey-blue. This will be used for primary text, headings, and dark UI elements to ensure high contrast and readability.
+*   **Neutral Light (`#f9fafb`):** A very light off-white/grey. This will serve as the primary background color for most of the application, creating a clean and spacious canvas.
+*   **Supporting Colors:**
+    *   **Success (`#10b981`):** Green, for success messages, approved statuses.
+    *   **Warning (`#f59e0b`):** Amber, for pending statuses, warnings.
+    *   **Danger (`#ef4444`):** Red, for error messages, denied statuses, destructive actions.
 
-### Semantic Colors
+## 4. Typography
 
-- **Success:** #22c55e
-- **Warning:** #f59e0b
-- **Error:** #ef4444
-- **Info:** #3b82f6
+Typography is critical for readability and establishing a clear visual hierarchy.
 
-### Color Usage
+*   **Font Family:** **Inter**. This sans-serif typeface was chosen for its excellent screen readability at all sizes. It is clean, modern, and versatile, suitable for both UI elements and body text.
+*   **Hierarchy:**
+    *   **Page Titles (h1):** Font-weight `bold`, size `2.25rem`.
+    *   **Section Headings (h2):** Font-weight `bold`, size `1.5rem`.
+    *   **Sub-Headings (h3):** Font-weight `semibold`, size `1.25rem`.
+    *   **Body Text (p):** Font-weight `normal`, size `1rem` (`16px`).
+    *   **Labels & Small Text:** Font-weight `medium`, size `0.875rem`.
 
-- Primary is used for: CTAs, links, active states, primary navigation
-- Accent is used for: secondary buttons, highlights, badges
-- Never use more than 3 colors on a single component
+## 5. Core UI Components
 
-## Typography
+We will build a library of reusable UI components to ensure consistency.
 
-### Font Stack
-
-- **Headings:** (font family, weights used)
-- **Body:** (font family, weights used)
-- **Mono:** (font family, for code/data)
-
-### Scale
-
-| Level | Size | Weight | Line Height | Use |
-|-------|------|--------|-------------|-----|
-| H1 | 2.5rem | 700 | 1.2 | Page titles |
-| H2 | 2rem | 600 | 1.3 | Section headers |
-| H3 | 1.5rem | 600 | 1.4 | Card titles |
-| Body | 1rem | 400 | 1.6 | Paragraphs |
-| Small | 0.875rem | 400 | 1.5 | Captions, labels |
-
-## Component Patterns
-
-### Buttons
-
-- Primary: filled with primary color, white text
-- Secondary: outlined with primary color
-- Ghost: text only, no background
-- Sizes: sm (32px), md (40px), lg (48px)
-- All buttons have minimum 44px touch target on mobile
-
-### Cards
-
-- Background: white (light mode) / dark neutral (dark mode)
-- Border radius: 12px
-- Padding: 16px (mobile), 24px (desktop)
-- Shadow: subtle on hover
-
-### Forms
-
-- Labels above inputs
-- Inline validation messages below fields
-- Input height: 44px minimum (mobile touch target)
-- Focus state: primary color ring
-
-## Layout Patterns
-
-- **Desktop:** Sidebar (240px) + main content area
-- **Tablet:** Collapsible sidebar + full-width content
-- **Mobile:** Bottom navigation (56px) + full-width content
-- **Max content width:** 1200px, centered
-
-## Spacing System
-
-Base unit: 4px. Use multiples: 4, 8, 12, 16, 24, 32, 48, 64, 96.
-
-## Accessibility
-
-- Minimum contrast ratio: 4.5:1 (AA) for body text, 3:1 for large text
-- Focus indicators on all interactive elements
-- Touch targets minimum 44x44px
-- Screen reader support for all dynamic content
-- Reduced motion support via `prefers-reduced-motion`
+*   **Buttons:** Primary buttons will use the `#ec4899` color. Secondary buttons will have an outline style. All buttons will have clear `hover` and `active` states.
+*   **Forms:** Inputs will be clean with clear labels, placeholder text, and validation messages that appear on interaction. Forms will be organized logically, often within card components.
+*   **Navigation:** For authenticated users, the primary navigation will be a collapsible sidebar on the left. The sidebar will contain icons and text links to the main pages: **Dashboard**, **Leave Hub**, **Expenses Manager**, etc. The active page will be highlighted using the primary color.
+*   **Cards:** Most content will be organized within cards with a light border and soft shadow to create a sense of depth and separation.
+*   **Modals:** Used for focused tasks like confirming a deletion or filling out a quick form without leaving the current page context.
+*   **Notifications/Toasts:** Used for providing non-blocking feedback to the user, such as 'Leave request submitted successfully'. They will be color-coded (Success, Error, Info).
